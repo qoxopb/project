@@ -2,20 +2,16 @@
 {% block style %}
 <style>
     main {
+        padding-top: 225px;
         min-width: 1900px;
-        width: 100%;
         background: #F9F3EE;
+        display: grid;
+        place-items: center;
     }
-    .main1 {
-        width: 1900px;
-        border: 1px solid white;
-    }
-
     .main1_1 {
         position: relative;
         float: left;
     }
-
     .main1_text1 {
         top:250px;
         right: 180px;
@@ -25,18 +21,11 @@
         font-size: 50px;
         width: 120px;
         font-weight: bold;
-
     }
-
-
     /* main2 */
     .main2 {
         margin-top: 150px;
-        padding-left: 280px;
     }
-
-
-
     .main2_1, .main2_2, .main2_3 {
         position: relative;
         float: left;
@@ -46,11 +35,9 @@
         display: block;
         clear: both;
     }
-
     .main2_img1, .main2_img2, .main2_img3 {
         padding-right: 10px;
     }
-
     .main2_img1:hover, .main2_img2:hover, .main2_img3:hover {
         opacity: 0.6;
         -webkit-transition: .5s ease-in-out;
@@ -86,7 +73,6 @@
         width: 120px;
         font-weight: bold;
     }
-
     .text1, .text2 {
         margin-top: 200px;
         font-size: 30px;
@@ -97,11 +83,8 @@
 {% endblock %}
 {% block main %}
 <main>
-    <div>
-
-    </div>
     <div class="main1">
-        <div class="main1_1"><a href="http://www.google.com"><img class="mian1_img1" src="{{ url_for('static', path='/img/main.png') }}" style="width: 1900px; padding: 10px; margin-top: 170px;"
+        <div class="main1_1"><a href="http://www.google.com"><img class="mian1_img1" src="{{ url_for('static', path='/img/main.png') }}" style="width: 1900px; padding: 10px;"
                                                                   alt="main1_1"><span class="main1_text1">et cetera Flagship<br> </span></a></div>
     </div>
 
