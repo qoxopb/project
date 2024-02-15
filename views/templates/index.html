@@ -1,53 +1,112 @@
 {% extends 'base.html' %}
-
+{% block style %}
+<style>
+    main {
+        padding-top: 225px;
+        min-width: 1900px;
+        background: #F9F3EE;
+        display: grid;
+        place-items: center;
+    }
+    .main1_1 {
+        position: relative;
+        float: left;
+    }
+    .main1_text1 {
+        top:250px;
+        right: 180px;
+        position: absolute;
+        z-index:1;
+        color:white;
+        font-size: 50px;
+        width: 120px;
+        font-weight: bold;
+    }
+    /* main2 */
+    .main2 {
+        margin-top: 150px;
+    }
+    .main2_1, .main2_2, .main2_3 {
+        position: relative;
+        float: left;
+    }
+    /* 레이아웃 정리 클리어 지금은 사용안함 */
+    .clearfix { content: "";
+        display: block;
+        clear: both;
+    }
+    .main2_img1, .main2_img2, .main2_img3 {
+        padding-right: 10px;
+    }
+    .main2_img1:hover, .main2_img2:hover, .main2_img3:hover {
+        opacity: 0.6;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    .main2_text1 {
+        top:350px;
+        left: 340px;
+        position: absolute;
+        z-index:1;
+        color:white;
+        font-size: 30px;
+        width: 100px;
+        font-weight: bold;
+    }
+    .main2_text2 {
+        top:350px;
+        left: 320px;
+        position: absolute;
+        z-index:1;
+        color:white;
+        font-size: 30px;
+        width: 120px;
+        font-weight: bold;
+    }
+    .main2_text3 {
+        top:350px;
+        left: 320px;
+        position: absolute;
+        z-index:1;
+        color:white;
+        font-size: 30px;
+        width: 120px;
+        font-weight: bold;
+    }
+    .text1, .text2 {
+        margin-top: 200px;
+        font-size: 30px;
+        text-align: center;
+        height: 200px;
+    }
+</style>
+{% endblock %}
 {% block main %}
 <main>
-    <div class="inner">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-        <div>11</div>
-        <div>12</div>
-        <div>13</div>
-        <div>14</div>
-        <div>15</div>
-        <div>16</div>
-        <div>17</div>
-        <div>18</div>
-        <div>19</div>
-        <div>20</div>
-        <div>21</div>
-        <div>22</div>
-        <div>23</div>
-        <div>24</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
-        <div>25</div>
+    <div class="main1">
+        <div class="main1_1"><a href="http://www.google.com"><img class="mian1_img1" src="{{ url_for('static', path='/img/main.png') }}" style="width: 1900px; padding: 10px;"
+                                                                  alt="main1_1"><span class="main1_text1">et cetera Flagship<br> </span></a></div>
+    </div>
+
+
+    <p>&nbsp;</p>
+    <div class="text1">
+        Add design to the interior. et cetera.
+    </div>
+    <div class="main2">
+        <div class="main2_1"><a href="http://www.google.com"><img class="main2_img1" src="{{ url_for('static', path='/img/main1.png') }}" style="width: 450px;"
+                                                                  alt="main2_1"><span class="main2_text1">Sofas</span></a></div>
+
+        <div class="main2_2"><a href="http://www.naver.com"><img class="main2_img2" src="{{ url_for('static', path='/img/main2.png') }}" style="width: 450px;"
+                                                                 alt="main2_2"><span class="main2_text2">Chairs</span></a></div>
+
+        <div class="main2_3"><a href="http://www.hanmail.net"><img class="main2_img3" src="{{ url_for('static', path='/img/main3.png') }}" style="width: 450px;"
+                                                                   alt="main2_3"><span class="main2_text3">Dining</span></a></div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="text2">
+        Original design, exquisite materials, extraordinary craftsmanship.
     </div>
 </main>
 {% endblock %}
